@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Users/hites/AndroidStudioProjects/JustForYou/app/src/main/res/layout/fragment_user_phone_auth.xml" value="0.1265625" />
+        <entry key="..\:/Users/hites/AndroidStudioProjects/JustForYou/app/src/main/res/drawable/btn_getotp.xml" value="0.1390625" />
+        <entry key="..\:/Users/hites/AndroidStudioProjects/JustForYou/app/src/main/res/layout/bottomsheet_user_verificationcode.xml" value="0.12291666666666666" />
+        <entry key="..\:/Users/hites/AndroidStudioProjects/JustForYou/app/src/main/res/layout/fragment_home.xml" value="0.13020833333333334" />
+        <entry key="..\:/Users/hites/AndroidStudioProjects/JustForYou/app/src/main/res/layout/fragment_user_phone_auth.xml" value="0.1" />
       </map>
     </option>
   </component>
