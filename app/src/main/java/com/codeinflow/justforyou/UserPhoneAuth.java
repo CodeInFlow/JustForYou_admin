@@ -31,7 +31,6 @@ public class UserPhoneAuth extends Fragment {
 
     private FirebaseAuth mAuth;
     private String mVerificationId;
-    Map<String, Object> data = new HashMap<>();
 
     EditText mobile, otp;
 
@@ -144,17 +143,13 @@ public class UserPhoneAuth extends Fragment {
 
                         } else {
 
-
                             String message = "Somthing is wrong, we will fix it soon...";
 
                             if (task.getException() instanceof FirebaseAuthInvalidCredentialsException) {
                                 message = "Invalid code entered...";
-
                             }
                             Toast.makeText(getActivity(), message, Toast.LENGTH_SHORT);
                             bottomSheetDialog.dismiss();
-
-
                         }
                     }
                 });
