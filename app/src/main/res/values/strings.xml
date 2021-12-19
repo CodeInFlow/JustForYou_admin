@@ -3,4 +3,9 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="user_phoneno">Phone Number</string>
+    <string name="bottomsheet_verify_title">Enter Verification Code</string>
+    <string name="bottomsheet_verify_desc">Please ask the customer for the verification code</string>
+    <string name="verify">Verify</string>
+    <string name="getotp">Get Otp</string>
+    <string name="img">img</string>
 </resources>
