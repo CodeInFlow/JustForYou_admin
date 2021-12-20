@@ -138,8 +138,12 @@ public class UserPhoneAuth extends Fragment {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
+                            Fragment fragment = new AddUserDetails();
+                            Bundle bundle = new Bundle();
+                            bundle.putString("phonenum",mobile.getText().toString());
+                            fragment.setArguments(bundle);
                             FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
-                            fragmentManager.beginTransaction().replace(R.id.fragment_container,new AddUserDetails());
+                            fragmentManager.beginTransaction().replace(R.id.fragment_container,fragment);
 
                         } else {
 
