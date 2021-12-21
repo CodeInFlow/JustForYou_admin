@@ -3,11 +3,46 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".Home">
 
-    <FrameLayout
-        android:id="@+id/fragment_container1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp">
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="150dp"
+        android:layout_height="200dp" />
+    <Button
+        android:id="@+id/b2"
+        android:layout_below="@+id/b1"
+        android:layout_width="150dp"
+        android:layout_height="100dp"/>
+
+        <Button
+            android:id="@+id/b3"
+            android:layout_marginLeft="160dp"
+            android:layout_width="150dp"
+            android:layout_height="80dp"/>
+        <Button
+            android:id="@+id/b4"
+            android:layout_marginLeft="160dp"
+            android:layout_below="@+id/b3"
+            android:layout_width="150dp"
+            android:layout_height="220dp"/>
+    </RelativeLayout>
+
+
+    <ImageButton
+        android:id="@+id/btn_scan"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/ic_scan"
+        android:background="@drawable/rounded_et"
+        android:layout_gravity="center_horizontal" />
+
 
 </LinearLayout>

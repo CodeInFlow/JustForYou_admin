@@ -17,7 +17,6 @@ import android.widget.Toast;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.Task;
-import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.firestore.CollectionReference;
 import com.google.firebase.firestore.DocumentReference;
 import com.google.firebase.firestore.FirebaseFirestore;
@@ -43,7 +42,7 @@ public class AddUserDetails extends Fragment {
         Spinner mode_spin = v.findViewById(R.id.mode_spin);
 
         String mobile = getArguments().getString("phonenum");
-        details.put("number",mobile);
+        details.put("number", mobile);
 
         ArrayAdapter a1 = new ArrayAdapter(getActivity(), simple_spinner_item, type);
         a1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
@@ -53,18 +52,25 @@ public class AddUserDetails extends Fragment {
         a2.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         mode_spin.setAdapter(a2);
 
+        spinner(type_spin, mode_spin);
+        addDataToFirestore();
+        return v;
+    }
+
+    private void spinner(Spinner type_spin, Spinner mode_spin) {
         type_spin.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
                 switch (position) {
                     case 0: {
-                        details.put("type","25");
+                        details.put("type", "25");
                     }
                     case 1: {
-                        details.put("type","50");
+                        details.put("type", "50");
                     }
                 }
             }
+
             @Override
             public void onNothingSelected(AdapterView<?> parentView) {
                 type_spin.requestFocus();
@@ -76,22 +82,22 @@ public class AddUserDetails extends Fragment {
             public void onItemSelected(AdapterView<?> parentView, View selectedItemView, int position, long id) {
                 switch (position) {
                     case 0: {
-                        details.put("payment_mode","Cash");
+                        details.put("payment_mode", "Cash");
                     }
                     case 1: {
-                        details.put("payment_mode","online");
+                        details.put("payment_mode", "online");
                     }
                     case 2: {
-                        details.put("payment_mode","other");
+                        details.put("payment_mode", "other");
                     }
                 }
             }
+
             @Override
             public void onNothingSelected(AdapterView<?> parentView) {
                 type_spin.requestFocus();
             }
         });
-        return v;
     }
 
     private void addDataToFirestore() {
@@ -101,7 +107,7 @@ public class AddUserDetails extends Fragment {
                 .addOnCompleteListener(new OnCompleteListener<DocumentReference>() {
                     @Override
                     public void onComplete(@NonNull Task<DocumentReference> task) {
-                        Toast.makeText(getActivity(),"User added",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity(), "User added", Toast.LENGTH_SHORT).show();
                         FragmentManager fragmentManager = getActivity().getSupportFragmentManager();
                         fragmentManager.beginTransaction().replace(R.id.fragment_container1, new Home());
                     }
@@ -109,7 +115,7 @@ public class AddUserDetails extends Fragment {
                 .addOnFailureListener(new OnFailureListener() {
                     @Override
                     public void onFailure(@NonNull Exception e) {
-                        Toast.makeText(getActivity(),"Please try again",Toast.LENGTH_SHORT).show();
+                        Toast.makeText(getActivity(), "Please try again", Toast.LENGTH_SHORT).show();
                     }
                 });
     }

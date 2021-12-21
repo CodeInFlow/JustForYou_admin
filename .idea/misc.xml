@@ -4,6 +4,8 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/hites/AndroidStudioProjects/JustForYou/app/src/main/res/drawable/btn_getotp.xml" value="0.1390625" />
+        <entry key="..\:/Users/hites/AndroidStudioProjects/JustForYou/app/src/main/res/drawable/ic_scan.xml" value="0.12760416666666666" />
+        <entry key="..\:/Users/hites/AndroidStudioProjects/JustForYou/app/src/main/res/drawable/rounded_et.xml" value="0.12760416666666666" />
         <entry key="..\:/Users/hites/AndroidStudioProjects/JustForYou/app/src/main/res/layout/activity_main.xml" value="0.1598731884057971" />
         <entry key="..\:/Users/hites/AndroidStudioProjects/JustForYou/app/src/main/res/layout/bottomsheet_user_verificationcode.xml" value="0.12291666666666666" />
         <entry key="..\:/Users/hites/AndroidStudioProjects/JustForYou/app/src/main/res/layout/fragment_add_user_details.xml" value="0.1598731884057971" />
