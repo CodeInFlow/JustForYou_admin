@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -150,4 +151,178 @@
     </LinearLayout>
 
 
+</LinearLayout>-->
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="30dp"
+    android:layout_marginRight="30dp"
+    tools:context=".MessMenu">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MessMenu"
+    android:orientation="vertical">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/lato_bold"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:text="Day"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:minHeight="48dp"
+            android:text="Aloo Paratha"
+            android:textSize="16dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginRight="40dp"
+            android:background="#eee"
+            />
+
+        <EditText
+            android:id="@+id/et2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:minHeight="48dp"
+            android:text="Aloo Paratha"
+            android:textSize="16dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginRight="40dp"
+            android:background="#eee"
+            />
+
+        <EditText
+            android:id="@+id/et3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:minHeight="48dp"
+            android:text="Aloo Paratha"
+            android:textSize="16dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginRight="40dp"
+            android:background="#eee"
+            />
+
+        <EditText
+            android:id="@+id/et4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:minHeight="48dp"
+            android:text="Aloo Paratha"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/lato_bold"
+        android:minHeight="48dp"
+        android:text="Night"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:minHeight="48dp"
+            android:text="Aloo Paratha"
+            android:textSize="16dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginRight="40dp"
+            android:background="#eee"
+            />
+
+        <EditText
+            android:id="@+id/et6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:minHeight="48dp"
+            android:text="Aloo Paratha"
+            android:textSize="16dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginRight="40dp"
+            android:background="#eee"
+            />
+
+        <EditText
+            android:id="@+id/et7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:minHeight="48dp"
+            android:text="Aloo Paratha"
+            android:textSize="16dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginRight="40dp"
+            android:background="#eee"
+            />
+        <EditText
+            android:id="@+id/et8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="16dp"
+            android:text="Aloo Paratha"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/update_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:text="Update Menu" />
+
 </LinearLayout>
+</androidx.core.widget.NestedScrollView>
